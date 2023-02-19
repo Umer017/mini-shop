@@ -1,0 +1,7 @@
+
+@media only screen and (max-width:500px) {
+    .offer-wall-logo{
+        flex-direction: column;
+        justify-content: unset;
+    }
+}

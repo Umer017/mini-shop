@@ -1,0 +1,157 @@
+.mycard{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.mycard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 10px 0px  rgb(0, 0, 0.2,0.2);
+}
+
+.card-title{
+font-size: xx-small; 
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: bold;
+color: rgb(180, 163, 163);
+text-align: left;
+}
+
+.card-image{
+    height: 60%;
+    width: 100%;
+    background-color: rgb(185, 185, 185);
+    border-radius: 10%;
+}
+
+.card-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+}
+
+.flexi{
+    display: flex;
+}
+
+.desItem{
+    margin: 10px;
+    font-size: large;
+}
+
+/*---------------------new One ------------------------*/
+
+@keyframes btn-bg {
+    from{
+        background-color: rgb(164, 167, 176);
+    }
+    to{
+        background-color: rgb(71, 57, 101);
+    }
+}
+
+@keyframes slide-image {
+    from{
+        position: absolute;
+        left: 0px;
+    }
+    to{
+       position: absolute;
+       right: 100px;
+    }
+}
+
+.All-cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-container{
+    border: black solid 2px;
+    background: #213D59;
+    background: -webkit-linear-gradient(left, #213D59, #A4A3A0);
+    background: -moz-linear-gradient(left, #213D59, #A4A3A0);
+    background: linear-gradient(to right, #213D59, #A4A3A0);
+    width: 350px;
+    cursor: pointer;
+    border-radius: 0% 10% ;
+    position: relative;
+}
+
+.card-image{
+    position: relative;
+}
+.card-image img{
+    width: 100%;
+    border-radius: 0% 10% ;
+    position: relative;
+}
+
+.card-image img:hover{
+    transition-duration: 0.5s;
+    width: 105%;
+    transform: translateX(5px);
+    /* animation-name: slide-image;
+    animation-delay: 0.5s; */
+}
+
+.card-product-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-title{
+    font-family:cursive;
+    color: aliceblue;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.product-price{
+    font-family:cursive;
+    color: aliceblue;
+    padding: 5px;
+    padding-right: 15px;
+}
+
+.view-product-button{
+    text-align: center;
+    color: aliceblue;
+    font-family: monospace;
+    font-size: 20px;
+    border-radius: 10%;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.view-feature{
+    text-align: center;
+    color: aliceblue;
+    font-family: monospace;
+    font-size: 20px;
+    border-radius: 10%;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.view-product-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-product-button:hover{
+    animation-name: btn-bg;
+    animation-duration: 0.5s;
+}
+.view-feature:hover{
+    animation-name: btn-bg;
+    animation-duration: 0.5s;
+}
+
+.hidden-features{
+position: absolute;
+z-index: -1;
+color: white;
+}

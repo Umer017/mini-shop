@@ -1,0 +1,54 @@
+.slider{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    background-color: black;
+    align-items: center;
+}
+
+.left{
+    flex: 5%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.left-button{
+   margin-top: 170px;
+   padding: 20px;
+   font-size: x-large;
+   font-weight: bold;
+   cursor: pointer;
+}
+.right-button{
+    margin-top: 170px;
+    padding: 20px;
+    font-size: x-large;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.centre{
+    flex: 90%;
+    height: 100%;
+}
+.right{
+    flex: 5%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.product-img img{
+     width: 400px;
+     margin-right: auto;
+     margin-left: 50%
+}
+
+.product-img img:hover{
+    width: 420px;
+    transform: translateY(-10px);
+    transition-delay: 0.2s;
+}

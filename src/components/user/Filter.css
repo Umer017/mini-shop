@@ -1,0 +1,21 @@
+/* .filter{
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.checkBox{
+    position: absolute;
+    top:50px;
+    padding: 15px;
+} */
+
+@media only screen and (max-width:550px) {
+
+    .filter{
+        display: none;
+    }
+    
+}

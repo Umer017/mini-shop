@@ -1,0 +1,33 @@
+{
+    "Products":[
+        {
+            "id":1,
+            "title":"Lenovo IdeaPad 3",
+            "screen":"15.6",
+            "image":"Lenovoideapad3.jpg",
+            "Description":{
+                "price":"40000",
+                "Available Units":"55",
+                "model":"IDEAQLD235",
+                "rating":3,
+                "Description":"A very powerfull laptop comes with RYZEN 5 processor of latest genration gives classiy look and all over the best in its price range"
+            }
+        },
+        {
+
+            "id":2,
+            "title":"Asus Rog",
+            "image":"AsusRog.jpg",
+            "screen":"15.6",
+            "Description":{
+                "price":"150000",
+                "Available Units":"55",
+                "model":"ROGASCU457",
+                "rating":4,
+                "Description":"A very powerfull laptop comes with RYZEN 5 processor of latest genration gives classiy look and all over the best in its price range"
+            }
+
+        }
+    ]
+   
+}

@@ -1,0 +1,15 @@
+/* .card-container{
+    display: flex;
+    position: relative;
+}
+
+@media only screen and (max-width:500px) {
+    .card-container{
+        flex-direction: column;
+    }
+} */
+
+.All-cards{
+    display: flex;
+    justify-content: space-evenly;
+}
