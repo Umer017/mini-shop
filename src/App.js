@@ -7,6 +7,7 @@ import MyCart from './components/user/Cart/MyCart';
 import HomePage from './components/user/HomePage';
 import Login from './components/user/Login/Login';
 import ProductContainer from './components/user/ProductContainer';
+import Register from './components/user/Register/Register';
 import SearchResults from './components/user/SearchResults';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       </Route>
       <Route path={'/About'} element={<About/>}/>
       <Route path={'/Login'} element={<Login/>}/>
+      <Route path={'/Register'} element={<Register/>}/>
       </Routes>
       <Outlet/>
       </BrowserRouter>

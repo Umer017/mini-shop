@@ -24,7 +24,7 @@ const Card = (props) => {
   // let imageSrc = "D:/DownloadsBackups/DesktopBackup/New folder/React/mini-ecom-site/mini-shop-admin/public/";
   return (
 <>
-<div className="card-container" key={props.id}>
+<div className="card-container m-1" key={props.id}>
 <div className="card-image">
     <div className="hidden-features">hidden features</div>
     <img src={`http://192.168.43.247:8080/${props.image}`} alt={props.id} />

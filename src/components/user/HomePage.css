@@ -21,3 +21,17 @@
     }
     
 } */
+
+.background{
+    background: #213D59;
+    background: -webkit-linear-gradient(left, #2f6475, #A4A3A0);
+    background: -moz-linear-gradient(left, #2f6475, #A4A3A0);
+    background: linear-gradient(to right, #2f6475, #A4A3A0);
+}
+
+.background2{
+    background: #213D59;
+    background: -webkit-linear-gradient(left, #213D59, #A4A3A0);
+    background: -moz-linear-gradient(left, #213D59, #A4A3A0);
+    background: linear-gradient(to right, #213D59, #A4A3A0);
+}

@@ -1,4 +1,4 @@
-.mycard{
+/* .mycard{
     background-color: rgb(255, 255, 255);
     width: 200px;
     height: 100%;
@@ -40,7 +40,7 @@ text-align: left;
 .desItem{
     margin: 10px;
     font-size: large;
-}
+} */
 
 /*---------------------new One ------------------------*/
 
@@ -91,8 +91,7 @@ text-align: left;
 
 .card-image img:hover{
     transition-duration: 0.5s;
-    width: 105%;
-    transform: translateX(5px);
+    transform: translateY(-5px);
     /* animation-name: slide-image;
     animation-delay: 0.5s; */
 }
