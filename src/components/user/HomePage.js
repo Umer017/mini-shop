@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <>
     <div className='col-12 background2'>
-    <div className='row'>
+    <div className='row m-0'>
     <div className='col-lg-2 col-md-2 col-sm-2 background'>
     <Filter/>
     </div>

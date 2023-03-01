@@ -23,7 +23,7 @@ const SearchBar = (props) => {
     <>
     <form className={`filter-form`}>
         <label for="filter-search"/>
-        <input type="text" name='filter-search' onChange={(event) => SearchTerm(event.target.value)}  id='filter-search' placeholder='search' className={`${props.MyClass}`} />
+        <input class="form-control" type="text" name='filter-search' onChange={(event) => SearchTerm(event.target.value)}  id='filter-search' placeholder='search' className={`${props.MyClass}`} />
     </form>
     </>
   )

@@ -1,17 +1,36 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState,useContext } from 'react'
+import { Link ,useNavigate } from 'react-router-dom'
 import './Login.js'
+import { UserFetcherByEId } from '../../../fetcher.js'
+import { CartContext } from '../../../ContextProvider.js'
 
 const Login = () => {
 
+
+  const {setLoginToTrue} = useContext(CartContext)
+  const Navigate = useNavigate()
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
 
-  const HandleSubmit = () => {
+  const HandleSubmit = async (e) => {
+    e.preventDefault()
 
+    const response = await UserFetcherByEId(email)
 
-
-  }
+    if(response.FoundedUser){
+      if(response.FoundedUser.UserPassword === password){
+        localStorage.setItem("UserName",response.FoundedUser.UserName)
+        localStorage.setItem("UserId",response.FoundedUser._id)
+        setLoginToTrue();
+        Navigate('/')
+        // console.log(response.FoundedUser)
+      }
+    }else if(response.status === 404){
+      console.log("user not exist")
+    } 
+    
+    
+    }
 
 
   return (

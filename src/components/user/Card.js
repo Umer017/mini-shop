@@ -27,7 +27,7 @@ const Card = (props) => {
 <div className="card-container m-1" key={props.id}>
 <div className="card-image">
     <div className="hidden-features">hidden features</div>
-    <img src={`http://192.168.43.247:8080/${props.image}`} alt={props.id} />
+    <img src={`http://127.0.0.1:8080/${props.image}`} alt={props.id} />
 </div>
 <div class="card-product-details">
     <div class="product-title" onClick={()=> navigate(`/Product/${pid}`)}>{props.title}</div>

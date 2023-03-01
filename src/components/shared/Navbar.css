@@ -29,6 +29,14 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 text-decoration: none;
 color: black;
 }
+
+.navitem{
+height: 40px;
+width: 80px;
+margin: 20px;
+padding: 5px;
+text-align: center;
+}
 .navitem:hover{
     background-color: rgb(43, 43, 43);
     padding: 5px;
@@ -40,28 +48,50 @@ color: black;
 }
 .naviteminner:hover{
     color: rgb(255, 255, 255);
+    height: inherit;
+    width: inherit;
 }
 
 .logo{
     font-size: x-large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-right: 20px;
+    height: 40px;
+width: 80px;
+margin: 20px;
+padding: 5px;
+text-align: center;
 }
+
+.Login a{
+   color: aliceblue;
+   text-decoration: none;
+}
+
+.Login a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+ }
+ 
 
 .Login{
     /* position: absolute;
     left: 80%; */
     /* float: right; */
     /* margin-left: 60%; */
-    background-color: rgb(41, 41, 41);
+    background: #213d59;
+    background: -webkit-linear-gradient(left, #213D59, #A4A3A0);
+    background: -moz-linear-gradient(left, #213D59, #A4A3A0);
+    background: linear-gradient(to right, #213D59, #A4A3A0);
+    height: 50px;
     width: 100px;
-    border-radius: 10%;
+    border-radius: 5%;
     font-weight: bold;
     font-size: 20px;
     color: white;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    padding: 5px;
+    padding: 0px;
     opacity: 80%;
     margin-right: 2em;
     justify-content: space-between;
@@ -73,6 +103,11 @@ color: black;
     opacity: 80%;
     margin-right: 2em;
     justify-content: space-between;
+    height: 40px;
+width: auto;
+margin: 20px;
+padding: 5px;
+text-align: center;
 }
 
 .showMb{
@@ -116,7 +151,11 @@ color: black;
 
 .search-nav{
     width: 200px;
-    margin-bottom: 20px;
+    height: 50px;
+    padding: 20px;
+    background:transparent;
+    border: 3px solid black;
+    border-radius: 20px;
 }
 
 @media only screen and (max-width:500px) {

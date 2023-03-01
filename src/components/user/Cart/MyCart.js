@@ -1,12 +1,13 @@
 import React, { useContext } from 'react'
+import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../../../ContextProvider'
 import CartRow from './CartRow';
 
 const MyCart = () => {
-  const {items} = useContext(CartContext);
+  const {items,isLogin} = useContext(CartContext);
   let total=0;
 console.log(items)
-
+const Navigate = useNavigate();
 const getCartItems =()=>{
  let cartItems = [];
  if(items.length > 0){
@@ -37,7 +38,7 @@ const getCartItems =()=>{
         <div className='row'>
           <div className='col-4'>TOTAL</div>
           <div className='col-4'><b>{total}</b></div>
-          <div className='col-4'><button className='btn btn-primary'>Checkout</button></div>
+          <div className='col-4'><button className='btn btn-primary' onClick={() =>{ isLogin ? Navigate('/Checkout') : alert('Please Login To continue')}}>Checkout</button></div>
         </div>
       </div>
     </div>

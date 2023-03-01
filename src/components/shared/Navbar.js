@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import ReactDOM  from 'react-dom'
 import {Link } from 'react-router-dom'
+import { CartContext } from '../../ContextProvider'
 import SearchBar from '../user/SearchBar'
 import './Navbar.css'
 
 const Navbar = () => {
+  const {isLogin} = useContext(CartContext)
   const [showNavigation,setShowNavigation] = useState(false);
   const NavigationHandler = () => {
     if(showNavigation === false){
@@ -42,9 +44,10 @@ const sideContent =
         <li className='logo'><Link className='naviteminner'>Shopify</Link></li>
         <li className='navitem'><Link className='naviteminner' to="/Home">Home</Link></li>
         <li className='navitem'> <Link className='naviteminner' to="/About">About</Link></li>
-        <li className='search-nav' ><SearchBar/></li>
+        <li className='navitem'> <Link className='naviteminner' to="/Feedback">Feedback</Link></li>
+        <li className='' ><SearchBar MyClass='search-nav'/></li>
      </ul>
-     <button className='Login' ><Link to={'/Login'}>Login</Link></button>
+     {  isLogin ? <button className='Login' ><Link to={'/Logout'}>logout</Link></button> : <button className='Login' ><Link to={'/Login'}>Login</Link></button> }
      <span className='cartlogo'><Link to="/Cart"><img src='../Resources/BrandLogo/CartLogo.png'/></Link></span>
      </div>
     </nav>

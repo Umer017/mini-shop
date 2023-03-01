@@ -17,6 +17,10 @@ export const ProductFetcherById = async (target) =>{
    return (fetcher(`/api/Product/${target}`))
 }
 
-export const UserFetcherById = async (email) =>{
+export const UserFetcherByEId = async (email) =>{
    return (fetcher(`api/User/email/${email}`))
+}
+
+export const UserFetcherById = async (target) =>{
+   return (fetcher(`api/User/${target}`))
 }

@@ -4,13 +4,14 @@ const CartContext = createContext();
 
 const CartProvider = ({children}) =>{
     const [items,setItems] = useState([]);
+    const [isLogin,setIslogin] = useState(false);
     const addItem = (item) =>{
         let newItem = [];
-        const exist = items.map(itm => {
+        const exist = items.filter(itm => {
             return  itm.title === item.title;
         })
         if(exist){
-            newItem = items;
+            newItem = [...items];
             newItem.push({title:item.title,price:item.price,Qty:items.Qty+1})
             setItems(newItem);
         }else{
@@ -28,16 +29,24 @@ const CartProvider = ({children}) =>{
         // })
         // console.log(exist)
         if(items.length > -1){
-            newItem = [... items];
+            newItem = [...items];
             newItem.splice(index,1);
             console.log("after",newItem)
         }
         console.log(newItem)
         setItems(newItem);
     }
+
+    const setLoginToTrue= () =>{
+        setIslogin(true)
+    }
+
+    const setLoginToFalse = () =>{
+        setIslogin(false)
+    }
     
     return(
-        <CartContext.Provider value={{items,addItem,removeItem}}>
+        <CartContext.Provider value={{items,addItem,removeItem,setLoginToTrue,setLoginToFalse,isLogin}}>
             {children}
         </CartContext.Provider>
     )

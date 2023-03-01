@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { UserFetcherById } from '../../../fetcher';
+import { UserFetcherByEId } from '../../../fetcher';
 import './Register.css'
 
 const Register = () => {
@@ -23,7 +23,7 @@ const Register = () => {
     console.log(userDetails)
 
     try {
-      let response1 = await UserFetcherById(userEmail)
+      let response1 = await UserFetcherByEId(userEmail)
       console.log(response1.status)
 
       if (response1.status === 404) {
